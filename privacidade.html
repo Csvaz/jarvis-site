@@ -43,7 +43,8 @@
     <tr><th>Permissão (escopo)</th><th>Para quê</th></tr>
     <tr><td><code>gmail.modify</code></td><td>Ler mensagens (remetente, assunto, texto) para resumir e classificar; aplicar marcadores, arquivar e mover para a lixeira — somente após confirmação do responsável, com opção de desfazer. O aplicativo <strong>não exclui mensagens permanentemente</strong> e não encaminha e-mails.</td></tr>
     <tr><td><code>gmail.compose</code></td><td>Criar rascunhos de resposta e enviá-los <strong>somente com confirmação explícita</strong> do responsável.</td></tr>
-    <tr><td><code>calendar.readonly</code></td><td>Ler compromissos (somente leitura) para montar o plano do dia e avisar sobre conflitos de horário. O aplicativo não cria, altera nem remove eventos.</td></tr>
+    <tr><td><code>calendar.readonly</code></td><td>Ler compromissos (somente leitura) dos calendários do responsável para montar o plano do dia e avisar sobre conflitos de horário. Esses calendários não são alterados.</td></tr>
+    <tr><td><code>calendar.app.created</code></td><td>Criar um calendário próprio chamado <strong>"Jarvis · Plano"</strong> e criar, atualizar e remover, <strong>somente nele</strong>, os blocos do plano do dia (tarefas, rotinas e compromissos cadastrados), para o responsável acompanhar o dia no Google Agenda. Essa permissão alcança apenas calendários criados pelo próprio aplicativo: o calendário principal e os demais calendários do responsável não são alterados.</td></tr>
   </table>
   <p>Anexos não são abertos nem executados. O aplicativo não acessa Contatos, Drive, Fotos nem outros serviços do Google.</p>
 
@@ -52,6 +53,7 @@
     <li>Resumir e classificar e-mails, sinalizar prazos e cobranças e preparar rascunhos de resposta.</li>
     <li>Sugerir e executar, com confirmação, a organização da caixa de entrada (marcadores, arquivamento, lixeira).</li>
     <li>Montar o plano do dia com base na agenda e nas tarefas do responsável.</li>
+    <li>Gravar o plano do dia no calendário próprio "Jarvis · Plano", para o responsável acompanhar o dia no Google Agenda.</li>
   </ul>
   <p>Os dados do Google <strong>não</strong> são usados para publicidade, perfilamento, venda ou qualquer finalidade alheia às funções acima.</p>
 
