@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade — Jarvis</title>
+<meta name="description" content="Política de Privacidade do Jarvis, assistente pessoal privado de Cláudio Vaz: dados do Google acessados, uso, armazenamento, compartilhamento e como revogar o acesso.">
+<style>
+  :root { --bg:#f6f8fb; --fg:#0f1b2d; --muted:#3f4e66; --card:#ffffff; --line:#dfe6f0; --accent:#0a7fb8; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#08121f; --fg:#e6f0fb; --muted:#b3c4d9; --card:#0e1c2e; --line:#1b2f47; --accent:#52c7ff; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:780px; margin:0 auto; padding:40px 20px 64px; }
+  h1 { font-size:1.8rem; margin:0 0 4px; }
+  h2 { font-size:1.15rem; margin:30px 0 6px; }
+  p, li { color:var(--muted); }
+  a { color:var(--accent); }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:16px 20px; margin:18px 0; }
+  code { background:var(--card); border:1px solid var(--line); border-radius:6px; padding:1px 6px; font-size:.92em; }
+  table { width:100%; border-collapse:collapse; margin:10px 0; font-size:.95rem; }
+  th, td { text-align:left; padding:8px 10px; border-bottom:1px solid var(--line); vertical-align:top; color:var(--muted); }
+  th { color:var(--fg); }
+  footer { margin-top:36px; font-size:.9rem; color:var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <p><a href="index.html">← Jarvis</a></p>
+  <h1>Política de Privacidade</h1>
+  <p>Aplicativo: <strong>Jarvis</strong> · Responsável: <strong>Cláudio Vaz</strong> · Última atualização: 23 de novembro de 2026</p>
+
+  <div class="card">
+    <strong>Resumo.</strong> O Jarvis é um assistente pessoal privado, de uso exclusivo do próprio responsável. Ele acessa o Gmail e o Google Agenda
+    apenas da conta que o responsável autoriza, somente para ajudá-lo a organizar o dia. Os dados não são vendidos, não são usados para publicidade e não são compartilhados com terceiros.
+  </div>
+
+  <h2>1. Quem somos</h2>
+  <p>O Jarvis foi criado e é operado por Cláudio Vaz, pessoa física, para uso próprio. Não há outros usuários. Contato: <a href="mailto:privacidade@claudiovaz.com">privacidade@claudiovaz.com</a>.</p>
+
+  <h2>2. Dados do Google que o aplicativo acessa</h2>
+  <p>O acesso é feito pela autorização OAuth do Google, concedida pelo próprio responsável, com as permissões mínimas para as funções abaixo.</p>
+  <table>
+    <tr><th>Permissão (escopo)</th><th>Para quê</th></tr>
+    <tr><td><code>gmail.modify</code></td><td>Ler mensagens (remetente, assunto, texto) para resumir e classificar; aplicar marcadores, arquivar e mover para a lixeira — somente após confirmação do responsável, com opção de desfazer. O aplicativo <strong>não exclui mensagens permanentemente</strong> e não encaminha e-mails.</td></tr>
+    <tr><td><code>gmail.compose</code></td><td>Criar rascunhos de resposta e enviá-los <strong>somente com confirmação explícita</strong> do responsável.</td></tr>
+    <tr><td><code>calendar.readonly</code></td><td>Ler compromissos (somente leitura) para montar o plano do dia e avisar sobre conflitos de horário. O aplicativo não cria, altera nem remove eventos.</td></tr>
+  </table>
+  <p>Anexos não são abertos nem executados. O aplicativo não acessa Contatos, Drive, Fotos nem outros serviços do Google.</p>
+
+  <h2>3. Como os dados são usados</h2>
+  <ul>
+    <li>Resumir e classificar e-mails, sinalizar prazos e cobranças e preparar rascunhos de resposta.</li>
+    <li>Sugerir e executar, com confirmação, a organização da caixa de entrada (marcadores, arquivamento, lixeira).</li>
+    <li>Montar o plano do dia com base na agenda e nas tarefas do responsável.</li>
+  </ul>
+  <p>Os dados do Google <strong>não</strong> são usados para publicidade, perfilamento, venda ou qualquer finalidade alheia às funções acima.</p>
+
+  <h2>4. Armazenamento e segurança</h2>
+  <ul>
+    <li>O token de acesso fica em arquivo com permissão restrita em um servidor privado operado pelo responsável, acessível por chave criptográfica.</li>
+    <li>O conteúdo completo dos e-mails e da agenda <strong>não é copiado para um banco de dados</strong>. O aplicativo guarda apenas dados operacionais mínimos, como identificadores de mensagens já vistas e planos de organização (identificadores e marcadores) para permitir desfazer.</li>
+    <li>Trechos de e-mails ou eventos exibidos nas conversas com o assistente podem permanecer no histórico dessas conversas, armazenado no mesmo servidor privado.</li>
+    <li>Ações que alteram a caixa de entrada exigem confirmação do responsável e podem ser desfeitas; mensagens movidas para a lixeira ficam recuperáveis pelo prazo do Gmail.</li>
+  </ul>
+
+  <h2>5. Compartilhamento</h2>
+  <p>Os dados do Google não são vendidos nem compartilhados com terceiros. Para gerar respostas e resumos, trechos do conteúdo podem ser processados por um provedor de modelo de linguagem (IA) contratado pelo responsável, somente para executar o pedido do próprio responsável, e não para outras finalidades. Como o único usuário é o próprio responsável, nenhuma outra pessoa lê esses dados, salvo se exigido por lei.</p>
+
+  <h2>6. Uso limitado (Google API Services User Data Policy)</h2>
+  <div class="card">
+    <p>Jarvis's use and transfer to any other app of information received from Google APIs will adhere to the
+    <a href="https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes">Google API Services User Data Policy</a>,
+    including the Limited Use requirements.</p>
+    <p>O uso e a transferência, para qualquer outro aplicativo, das informações recebidas das APIs do Google pelo Jarvis seguirão a Política de Dados do Usuário dos Serviços de API do Google, incluindo os requisitos de Uso Limitado.</p>
+  </div>
+
+  <h2>7. Retenção e exclusão; como revogar o acesso</h2>
+  <ul>
+    <li>O acesso pode ser revogado a qualquer momento em <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, removendo o app "Jarvis". A revogação interrompe imediatamente o acesso.</li>
+    <li>Ao revogar, o token é apagado do servidor e os dados operacionais mínimos (identificadores, planos) podem ser excluídos mediante pedido ao contato abaixo.</li>
+  </ul>
+
+  <h2>8. Crianças</h2>
+  <p>O aplicativo não é destinado a crianças e não coleta dados de menores.</p>
+
+  <h2>9. Alterações desta política</h2>
+  <p>Mudanças serão publicadas nesta página, com a data de atualização no topo.</p>
+
+  <h2>10. Contato</h2>
+  <p>Dúvidas ou solicitações: <a href="mailto:privacidade@claudiovaz.com">privacidade@claudiovaz.com</a>.</p>
+
+  <footer>© 2026 Cláudio Vaz · <a href="index.html">Início</a></footer>
+</main>
+</body>
+</html>
